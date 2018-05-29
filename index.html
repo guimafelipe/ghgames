@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html>
 
 <head>
@@ -20,6 +20,31 @@
     <link rel="stylesheet" type="text/css" media="screen" href="dist/css/font-awesome.min.css" />
 
     <script src="dist/js/ink.min.js"></script>
+    <script src="dist/js/ink.imagequery.js"></script>
+
+    <script>
+        var imagequery = new Ink.UI.ImageQuery('.imagequery', {
+            src: '/assets/img/examples/{:label}/{:file}',
+            queries: [
+                {
+                    label: 'tiny',
+                    width: 320
+                },
+                {
+                    label: 'medium',
+                    width: 960
+                },
+                {
+                    label: 'large',
+                    width: 1200
+                },
+                {
+                    label: 'xlarge',
+                    width: 1400
+                }
+            ]
+        });
+    </script>
 
     <style type="text/css">
         body {
@@ -43,10 +68,18 @@
         <h1>Guima Hohl Games</h1>
         <nav id="menu" class="ink-navigation">
             <ul class="menu horizontal black">
-                <li class="heading"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="heading">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Games</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
             </ul>
         </nav>
 
@@ -54,13 +87,13 @@
             <h2>About us</h2>
             <div class="fw-300">
                 <p>Bacon ipsum dolor amet brisket pancetta boudin landjaeger. Shank filet mignon tri-tip frankfurter cow. Shank
-                    prosciutto swine, beef leberkas andouille short ribs hamburger kielbasa alcatra drumstick. Pig bacon pancetta,
-                    ribeye spare ribs meatloaf ham hock doner fatback ground round pastrami.</p>
+                    prosciutto swine, beef leberkas andouille short ribs hamburger kielbasa alcatra drumstick. Pig bacon
+                    pancetta, ribeye spare ribs meatloaf ham hock doner fatback ground round pastrami.</p>
 
                 <p> Picanha beef meatloaf, pork belly tongue ground round biltong sausage boudin hamburger cupim ham strip steak
-                    corned beef flank. Ribeye meatball t-bone boudin biltong ham hamburger shank. Meatloaf alcatra cow tail tri-tip
-                    turducken, jerky burgdoggen swine shoulder porchetta. Meatball sirloin landjaeger fatback pork chop. Shoulder
-                    shank landjaeger, ham hock t-bone flank brisket biltong tenderloin cupim bresaola ham.</p>
+                    corned beef flank. Ribeye meatball t-bone boudin biltong ham hamburger shank. Meatloaf alcatra cow tail
+                    tri-tip turducken, jerky burgdoggen swine shoulder porchetta. Meatball sirloin landjaeger fatback pork
+                    chop. Shoulder shank landjaeger, ham hock t-bone flank brisket biltong tenderloin cupim bresaola ham.</p>
             </div>
         </div>
 
@@ -70,7 +103,12 @@
                 <div class="xlarge-33 large-33 medium-50 small-70 tiny-100">
                     <div class="game-item column">
                         <h3>Very Realistic Waiter Simulator</h3>
-                        <img src="" alt="">
+                        <figure class="ink-image">
+                            <figcaption class="light">
+                                Waiter Simulator
+                            </figcaption>
+                            <img src="https://img.itch.zone/aW1hZ2UvMjQ5Njg0LzEyNjMzNzMucG5n/347x500/Cn%2FULa.png" alt="">
+                        </figure>
                         <p>Ludum Dare 41 3D game made with godot</p>
                         <a href="https://flpguima.itch.io/very-realistic-waiter-simulator">Jogar</a>
                     </div>
@@ -78,7 +116,12 @@
                 <div class="xlarge-33 large-33 medium-50 small-70 tiny-100">
                     <div class="game-item column">
                         <h3>Ricochette</h3>
-                        <img src="" alt="">
+                        <figure class="ink-image">
+                            <figcaption class="light">
+                                Ricochette
+                            </figcaption>
+                            <img src="https://static.jam.vg/raw/fe6/3/z/bdc7.png" alt="">
+                        </figure>
                         <p>Ludum Dare 40 2D multiplayer game made with unity</p>
                         <a href="https://flpguima.itch.io/ricochette">Jogar</a>
                     </div>
@@ -86,7 +129,12 @@
                 <div class="xlarge-33 large-33 medium-50 small-70 tiny-100">
                     <div class="game-item column">
                         <h3>Ricochette</h3>
-                        <img src="" alt="">
+                        <figure class="ink-image">
+                            <figcaption class="light">
+                                Ricochette
+                            </figcaption>
+                            <img src="https://static.jam.vg/raw/fe6/3/z/bdc7.png" alt="">
+                        </figure>
                         <p>Ludum Dare 40 2D multiplayer game made with unity</p>
                         <a href="https://flpguima.itch.io/ricochette">Jogar</a>
                     </div>
