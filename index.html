@@ -60,7 +60,21 @@
         footer {
             background: #ccc;
         }
+
+        .game-item {
+            background: #ccc;
+            border-radius: 0.2em;
+            padding: .2em;
+        }
+
     </style>
+    <script src="dist/js/modernizr.js"></script>
+    <script type="text/javascript">
+        Modernizr.load({
+            test: Modernizr.flexbox,
+            nope: 'dist/css/ink-legacy.min.css',
+        });
+    </script>
 </head>
 
 <body>
@@ -99,7 +113,7 @@
 
         <div class="ink-grid">
             <h2>Games</h2>
-            <div class="column-group horizontal-gutters">
+            <div class="column-group vertical-gutters horizontal-gutters push-center push-top">
                 <div class="xlarge-33 large-33 medium-50 small-70 tiny-100">
                     <div class="game-item column">
                         <h3>Very Realistic Waiter Simulator</h3>
@@ -110,7 +124,7 @@
                             <img src="https://img.itch.zone/aW1hZ2UvMjQ5Njg0LzEyNjMzNzMucG5n/347x500/Cn%2FULa.png" alt="">
                         </figure>
                         <p>Ludum Dare 41 3D game made with godot</p>
-                        <a href="https://flpguima.itch.io/very-realistic-waiter-simulator">Jogar</a>
+                        <button class="ink-button black" onclick="window.location.href='https://flpguima.itch.io/very-realistic-waiter-simulator'">Jogar</button>
                     </div>
                 </div>
                 <div class="xlarge-33 large-33 medium-50 small-70 tiny-100">
@@ -123,7 +137,7 @@
                             <img src="https://static.jam.vg/raw/fe6/3/z/bdc7.png" alt="">
                         </figure>
                         <p>Ludum Dare 40 2D multiplayer game made with unity</p>
-                        <a href="https://flpguima.itch.io/ricochette">Jogar</a>
+                        <button class="ink-button black" onclick="window.location.href='https://flpguima.itch.io/ricochette'">Jogar</button>
                     </div>
                 </div>
                 <div class="xlarge-33 large-33 medium-50 small-70 tiny-100">
@@ -136,7 +150,7 @@
                             <img src="https://static.jam.vg/raw/fe6/3/z/bdc7.png" alt="">
                         </figure>
                         <p>Ludum Dare 40 2D multiplayer game made with unity</p>
-                        <a href="https://flpguima.itch.io/ricochette">Jogar</a>
+                        <button class="ink-button black" onclick="window.location.href='https://flpguima.itch.io/ricochette'">Jogar</button>
                     </div>
                 </div>
             </div>
